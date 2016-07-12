@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qiwo.enumlistdemo">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 百度地图 permession -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="w7ZO5MfVvdYzGWRH2avVqYITI4KoA7Nd" />
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="174f68074406ff64aa466a1cfb7f50e3" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".HotePointActivity" />
+        <activity android:name=".RecordActivity" />
+        <activity android:name=".AVLoadingActivity" />
+        <activity android:name=".BLEActivity" />
+        <activity android:name=".ScreenCaptureActivity" />
+        <activity android:name=".Main3Activity" />
+        <activity android:name=".VideoActivity" />
+        <activity android:name=".RainbowBarActivity" />
+        <activity android:name=".BaiduMapDemoActivity" />
+        <activity android:name=".GodMapDemoActivity" />
+
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity android:name=".RetrofitDemoActivity" />
+        <activity android:name=".MetricalDesignDemoActivity" />
+        <activity android:name=".ToolBarDemoActivity" />
+        <activity android:name=".HealthCalStepActivity" />
+        <activity android:name=".StudyTimeDisableActivity"></activity>
+        <activity android:name=".DayPickerActivity"></activity>
+        <activity android:name=".SwipeRycyclerActivity"></activity>
+    </application>
+
+</manifest>
