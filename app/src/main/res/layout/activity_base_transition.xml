@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scene_root">
+
+    <include layout="@layout/toolbar"></include>
+
+    <ImageView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/icon_dad"
+        android:id="@+id/view_change">
+    </ImageView>
+
+    <Button android:id="@+id/btn_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHANGE"/>
+
+    <Button android:id="@+id/btn_change_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="改变大小"/>
+
+    <Button android:id="@+id/btn_change_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="改变位置"/>
+</LinearLayout>

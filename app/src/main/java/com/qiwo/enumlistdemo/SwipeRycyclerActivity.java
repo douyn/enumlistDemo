@@ -70,7 +70,8 @@ public class SwipeRycyclerActivity extends Activity implements SwipeRefreshLayou
                     public void onRowLongClicked(int position) {
                         Toast.makeText(SwipeRycyclerActivity.this, "Row " + (position + 1) + " long clicked!", Toast.LENGTH_SHORT).show();
                     }
-                });
+                }).setUnSwipeableRows(0,2,4,26);
+
     }
 
     @Override

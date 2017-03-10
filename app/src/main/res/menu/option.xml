@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ToolBarDemoSecondActivity">
+    <item android:id="@+id/option_item1"
+        android:title="分享"
+        android:icon="@drawable/nav_sleep"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/option_item2"
+        android:title="关于"
+        android:icon="@drawable/nav_sleep"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/option_item3"
+        android:title="试试"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/option_item4"
+        android:title="返回"
+        app:showAsAction="never"/>
+</menu>

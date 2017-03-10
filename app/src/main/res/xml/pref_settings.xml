@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--分类-->
+    <PreferenceCategory
+        android:key="category_user"
+        android:title="用户">
+        <!--第一个设置项-->
+        <Preference android:key="cur_user"/>
+        <!--添加一个带EditText的设置项-->
+        <EditTextPreference android:key="open_vip"
+            android:title="开通会员"
+            android:summary="可通过会员壳享受不限流量特权"
+            android:defaultValue="12"
+            android:inputType="number"/>
+        <Preference android:key="log_out"
+            android:title="退出登录"
+            android:summary="选择其他账号登录"
+            android:enabled="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:key="category_net"
+        android:title="网络">
+        <!--添加一个SwitchPreference-->
+        <SwitchPreference android:key="off_line"
+            android:title="离线模式"
+            android:summary="开启后将不再进行网络请求"/>
+        <!--嵌套一个设置屏幕-->
+        <PreferenceScreen>
+            <PreferenceCategory android:key="net_select"
+                android:title="网络选择">
+                <Preference android:key="conn_now"
+                    android:title="当前使用的是WIFI"
+                    android:summary="WIFI信号强度:40">
+                </Preference>
+                <!--创建一个多选设置项-->
+                <MultiSelectListPreference android:key="save_mode"
+                    android:title="省流量模式"
+                    android:summary="允许WIFI下联网"
+                    android:entries="@array/save_modes"
+                    android:entryValues="@array/save_modes"/>
+            </PreferenceCategory>
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="category_notification"
+        android:title="通知">
+        <SwitchPreference android:key="start_notification"
+            android:title="开启推送"
+            android:summary="当前允许推送消息"/>
+        <!--选择铃声-->
+        <RingtonePreference android:key="ring_tong"
+            android:title="通知消息铃声"
+            android:summary="adidas"/>
+    </PreferenceCategory>
+</PreferenceScreen>

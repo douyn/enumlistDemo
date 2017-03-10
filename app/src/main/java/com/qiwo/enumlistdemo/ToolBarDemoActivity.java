@@ -18,57 +18,6 @@ import android.view.View;
  * Created by l on 2016/6/10.
  */
 public class ToolBarDemoActivity extends AppCompatActivity {
-//    @Bind(R.id.toolbar)
-//    Toolbar toolbar;
-//    @Bind(R.id.content_fragment)
-//    FrameLayout contentFragment;
-//    @Bind(R.id.negaviteview)
-//    NavigationView negaviteview;
-//    @Bind(R.id.drawer)
-//    DrawerLayout drawer;
-//
-//    @Override
-//    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-//        super.onCreate(savedInstanceState, persistentState);
-//        setContentView(R.layout.activity_toolbar_demo);
-//        ButterKnife.bind(this);
-//        setupToolBar();
-//        setupDrawer();
-//        setupNegavite();
-//    }
-//
-//    private void setupNegavite() {
-////        negaviteview.setNavigationItemSelectedListener();
-//    }
-//
-//    private void setupDrawer() {
-//        ActionBarDrawerToggle drawertoggle = new ActionBarDrawerToggle(ToolBarDemoActivity.this, drawer, toolbar, R.string.drawer_open, R.string.drawer_close);
-//        drawertoggle.syncState();
-//        drawer.setDrawerListener(drawertoggle);
-//    }
-//
-//    private void setupToolBar() {
-//        toolbar.setTitleTextColor(Color.WHITE);
-//        setSupportActionBar(toolbar);
-////        getSupportActionBar().setHomeButtonEnabled(true);
-////        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        setTitle("菜单");
-//    }
-//
-//    @Override
-//    protected void onPause() {
-//        super.onPause();
-//    }
-//
-//    @Override
-//    protected void onResume() {
-//        super.onResume();
-//    }
-//
-//    @Override
-//    protected void onDestroy() {
-//        super.onDestroy();
-//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
