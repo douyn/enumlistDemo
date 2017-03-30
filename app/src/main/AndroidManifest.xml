@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qiwo.enumlistdemo">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 百度地图 permession -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- iBeancon功能所需权限 -->;
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 个推3.0电子围栏功能所需权限 -->
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="w7ZO5MfVvdYzGWRH2avVqYITI4KoA7Nd" />
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="174f68074406ff64aa466a1cfb7f50e3" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="eld" />
+            </intent-filter>
+        </activity>
+        <!--
+         ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".HotePointActivity" />
+        <activity android:name=".RecordActivity" />
+        <activity android:name=".AVLoadingActivity" />
+        <activity android:name=".BLEActivity" />
+        <activity android:name=".ScreenCaptureActivity" />
+        <activity android:name=".Main3Activity" />
+        <activity android:name=".VideoActivity" />
+        <activity android:name=".RainbowBarActivity" />
+        <activity android:name=".BaiduMapDemoActivity" />
+        <activity android:name=".GodMapDemoActivity" />
+
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity android:name=".RetrofitDemoActivity" />
+        <activity android:name=".MetricalDesignDemoActivity" />
+        <activity
+            android:name=".ToolBarDemoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".HealthCalStepActivity" />
+        <activity android:name=".StudyTimeDisableActivity" />
+        <activity android:name=".DayPickerActivity" />
+        <activity android:name=".SwipeRycyclerActivity" />
+        <activity android:name=".TabLayoutDemoActivity" />
+        <activity android:name=".DatePickerDialogDemoActivity" />
+        <activity android:name=".AlbumDemoActivity" />
+        <activity android:name=".GalleryActivity2" />
+        <activity android:name=".ExpandableRecycleViewActivity" />
+        <activity android:name=".PathAnimationDemoActivity" />
+        <activity android:name=".DrawLineActivity" />
+        <activity android:name=".ChangeCircularActivity" />
+        <activity android:name=".DrawPathAnimActivity" />
+        <activity android:name=".BoLangActivity" />
+        <activity android:name=".QQDeleteDemoActivity" />
+        <activity android:name=".IJkplayerDemoActivity" />
+        <activity android:name=".AndroidStyleSettingActivity" />
+        <activity android:name=".SchemeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <category android:name="android.intent.category.BROWSABLE"></category>
+                <data android:scheme="schemedemo" android:host="test" android:port="8888" android:path="/scheme"></data>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.liuguangqiang.ipicker.IPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IPickerTheme" />
+        <activity
+            android:name="com.liuguangqiang.ipicker.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IPickerTheme" />
+        <activity android:name=".IPickDemoActivity" />
+        <activity android:name=".DaoHangActivity" />
+        <activity android:name=".ToolBarDemoSecondActivity" />
+        <activity android:name=".SimpleActivity" />
+        <activity android:name=".ConstraintLayoutDemoActivity" />
+        <activity android:name=".PathDemoActivity" />
+        <activity android:name=".SwipeCardViewDemoActivity" />
+        <activity android:name=".FlipViewDemoActivity" />
+        <activity android:name=".FlowLayoutDemoActivity" />
+        <activity android:name=".AnimationDemoActivity" />
+        <activity android:name=".BLEDemoActivity" />
+        <activity android:name=".RetrofitHttpsDemoActivity" />
+        <activity android:name=".BaseTransitionActivity" />
+        <activity android:name=".TransitionDemoActivity" />
+        <activity android:name=".AndroidReferenceDemoActivity" />
+
+        <!--<receiver
+            android:name="com.qiwo.services.NetworkChangeReceiver"
+            android:label="NetworkConnection" >
+            <intent-filter>
+                &lt;!&ndash; 网络状态发生变化的时候，系统会发出 android.net.conn.CONNECTIVITY_CHANGE &ndash;&gt;
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>-->
+
+        <service android:name="com.qiwo.services.GetuiServices"></service>
+        <service android:name="com.qiwo.base.view.ijk.MediaPlayerService"></service>
+
+        <!-- 配置第三方Receiver -->
+        <!--<receiver
+            android:name="com.qiwo.services.GetuiPushBroadcast"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.${GETUI_APP_ID}" />
+            </intent-filter>
+        </receiver>-->
+
+    </application>
+
+</manifest>

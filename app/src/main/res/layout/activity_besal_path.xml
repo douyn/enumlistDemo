@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button android:id="@+id/btn_drawline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="贝塞尔曲线-触屏画线"/>
+    <Button android:id="@+id/btn_changecircular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="贝塞尔曲线-曲线变形"/>
+    <Button android:id="@+id/btn_drawpathanim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="贝塞尔曲线-路径动画"/>
+    <Button  android:id="@+id/btn_bolang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="贝塞尔曲线-波浪效果"/>
+    <Button android:id="@+id/qq_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="贝塞尔曲线实例-QQ红点拖拽消除的实现"/>
+</LinearLayout>

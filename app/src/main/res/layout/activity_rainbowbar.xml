@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rbb="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.qiwo.enumlistdemo.RainbowBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        rbb:rainbowbar_hspace="80dp"
+        rbb:rainbowbar_vspace="10dp"
+        rbb_rainbowbar_color="@android:color/holo_blue_bright">
+    </com.qiwo.enumlistdemo.RainbowBar>
+</LinearLayout>

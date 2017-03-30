@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="从相册选取二维码图片"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="血压值"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <cn.carbswang.android.numberpickerview.library.NumberPickerView
+        android:id="@+id/picker_low"
+        android:layout_width="160dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="20dp"
+        android:background="#11999999"
+        app:npv_ItemPaddingHorizental="5dp"
+        app:npv_ItemPaddingVertical="5dp"
+        app:npv_ShowCount="5"
+        app:npv_TextSizeNormal="16sp"
+        app:npv_TextSizeSelected="20sp"
+        app:npv_WrapSelectorWheel="true"/>
+    <cn.carbswang.android.numberpickerview.library.NumberPickerView
+        android:id="@+id/picker_high"
+        android:layout_width="160dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="20dp"
+        android:background="#11999999"
+        app:npv_ItemPaddingHorizental="5dp"
+        app:npv_ItemPaddingVertical="5dp"
+        app:npv_ShowCount="5"
+        app:npv_TextSizeNormal="16sp"
+        app:npv_TextSizeSelected="20sp"
+        app:npv_WrapSelectorWheel="true"/>
+    </LinearLayout>
+</LinearLayout>
