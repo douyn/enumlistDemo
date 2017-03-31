@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+    <com.qiwo.widget.ViewDragHelpLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_drag_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:background="#ff0000"
+            android:text="DragItem One"/>
+        <TextView android:id="@+id/tv_drag_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:textColor="#ffffff"
+            android:background="#00ff00"
+            android:text="DragItem Two"/>
+        <TextView android:id="@+id/tv_drag_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:background="#0000ff"
+            android:padding="16dp"
+            android:text="DragItem Three"/>
+    </com.qiwo.widget.ViewDragHelpLayout>
+</LinearLayout>

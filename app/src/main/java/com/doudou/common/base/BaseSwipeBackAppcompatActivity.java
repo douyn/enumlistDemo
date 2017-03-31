@@ -51,8 +51,11 @@ public abstract class BaseSwipeBackAppcompatActivity extends AppCompatActivity i
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(getLayoutId());
-        ButterKnife.bind(this);
+        if (getLayoutId() != 0) {
+            setContentView(getLayoutId());
+            ButterKnife.bind(this);
+        }
+
 
         mToolBar = (Toolbar) findViewById(R.id.toolbar);
         mHelper = new SwipeBackActivityHelper(this);

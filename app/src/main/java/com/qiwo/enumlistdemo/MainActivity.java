@@ -81,7 +81,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         OPTIO36(36, "BLE", "BLE", BLEDemoActivity.class),
         OPTIO37(37, "Retrofit支持加密HTTPS传输", "Retrofit https", RetrofitHttpsDemoActivity.class),
         OPTIO38(38, "Android new API - Transition", "transition", TransitionDemoActivity.class),
-        OPTIO39(39, "Android Reference", "Android Reference", AndroidReferenceDemoActivity.class);
+        OPTIO39(39, "Android Reference", "Android Reference", AndroidReferenceDemoActivity.class),
+        OPTIO40(40, "Swipe RecyclerView", "Custome SwipeRecyclerView", CustomeSwipeRecyclerViewDemoActivity.class),
+        OPTIO41(41, "ViewDragHelper", "ViewDragHelper", DragViewHelperDemoActivity.class);
 
         int index;
         String desc;

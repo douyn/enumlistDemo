@@ -136,6 +136,8 @@
         <activity android:name=".BaseTransitionActivity" />
         <activity android:name=".TransitionDemoActivity" />
         <activity android:name=".AndroidReferenceDemoActivity" />
+        <activity android:name=".CustomeSwipeRecyclerViewDemoActivity" />
+        <activity android:name=".DragViewHelperDemoActivity" />
 
         <!--<receiver
             android:name="com.qiwo.services.NetworkChangeReceiver"
